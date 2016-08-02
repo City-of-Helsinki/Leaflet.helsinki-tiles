@@ -5,17 +5,50 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./dist/bundle.min.js"></script>
+    <script src="./dist/Leaflet.helsinki-tiles.min.js"></script>
 
 </head>
 <body>
 
-    <div style="width:1200px; height:800px;"
+    <div style="width:100%; height:400px;"
         <div id="map"></div>
     </div>
-
     <script>
-        var map = L.map.Helsinki("map", "series");
+        // This library offers 3 ways to add a map with Helsinki background tiles,
+        // here shown from simplest first, with increasing granularity of control:
+
+        // -----
+        // 1. One liner (valid "background" options are "servicemap", "ortho" and "series")
+        var map = L.map.Helsinki("map", {background: "ortho"});
+        // -----
+
+
+        // -----
+        // 2. Pass the CRS name ("tm35" or "gk25") in the options to init the map with the
+        //      correct CRS, and then explicitly create and add the background tile layer to the map.
+
+        // var opts = {
+        //     crs: "tm35",
+        // }
+        // var map = L.map.Helsinki("map", opts);
+        // var servicemapBg = L.tileLayer.Helsinki("servicemap");
+        // servicemapBg.addTo(map);
+        // -----
+
+
+        // -----
+        // 3. Create both the background layer and CRS objects explicitly. Pass the returned CRS
+        //      object as an option and then add the background layer.
+
+        // var crs = L.CRS.Helsinki("gk25");
+        // var opts = {
+        //     crs: crs,
+        // }
+        // var map = L.map.Helsinki("map", opts);
+        // var orthoBg = L.tileLayer.Helsinki("ortho");
+        // orthoBg.addTo(map);
+        // -----
+
     </script>
 
 </div>
