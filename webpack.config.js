@@ -2,7 +2,7 @@ module.exports = {
     entry:  __dirname + "/src/app.js",
     output: {
         path: __dirname + "/dist",
-        filename: "bundle.js",
+        filename: "Leaflet.helsinki-tiles.js",
         library: "L"
     },
     resolve: {

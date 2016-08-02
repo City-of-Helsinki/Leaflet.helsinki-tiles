@@ -4,7 +4,7 @@
   "description": "Easily initialize Leaflet (1.0) maps with background tiles from the City of Helsinki",
   "main": "entry.js",
   "scripts": {
-    "build": "webpack && uglifyjs ./dist/bundle.js -c -m -o ./dist/bundle.min.js --source-map ./dist/bundle.min.js.map"
+    "build": "webpack && uglifyjs ./dist/Leaflet.helsinki-tiles.js -c -m -o ./dist/Leaflet.helsinki-tiles.min.js --source-map ./dist/Leaflet.helsinki-tiles.min.js.map"
   },
   "repository": {
     "type": "git",
