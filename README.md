@@ -19,4 +19,4 @@ At the moment, supported background map tile sources are:
  - Latest available orthographic aerial images in GK25 coordinates. Usage: `L.map.Helsinki('map-element-name', {background: 'ortho'})`
  - "map series" tiles from the City of Helsinki in GK25 coordinates. Usage: `L.map.Helsinki('map-element-name', {background: 'series'})`
 
-The API also exposes functions to explicitly create the CRS and TileLayer objects that can be passed to leaflet. Read more in the [examples](examples.html).
+The API also exposes functions to explicitly create the CRS and TileLayer objects that can be passed to leaflet. Read more in the [examples](example.html).
