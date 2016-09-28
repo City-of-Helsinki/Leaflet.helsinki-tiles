@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <div style="width:100%; height:400px;"
-        <div id="map"></div>
+    <div id="container">
+        <div id="map" style="width:100%; height:400px;"></div>
     </div>
     <script>
         // This library offers 3 ways to add a map with Helsinki background tiles,
@@ -19,7 +19,7 @@
 
         // -----
         // 1. One liner (valid "background" options are "servicemap", "ortho" and "series")
-        var map = L.map.Helsinki("map", {background: "ortho"});
+        var map = L.map.Helsinki("map", {background: "servicemap"});
         // -----
 
 
