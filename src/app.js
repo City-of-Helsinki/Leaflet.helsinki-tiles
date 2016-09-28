@@ -1,9 +1,7 @@
 /* js adapted from:
 - https://github.com/hep7agon/city-feedback-hub
 - https://github.com/City-of-Helsinki/democracy-preview
-
-modified by hkotkanen
-https://github.com/hkotkanen/Leaflet.helsinki-tiles*/
+*/
 
 require("leaflet_css");
 // requiring only the leaflet.css tries to import these images, which webpack struggles with.
