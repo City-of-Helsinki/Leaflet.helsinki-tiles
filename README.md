@@ -1,5 +1,7 @@
 # Leaflet.helsinki-tiles
 
+**NB!:** Leaflet 1.0.0 has a [compatibility problem with Webpack's css-loader](https://github.com/Leaflet/Leaflet/issues/4849) caused by the non-url placeholder `url(images/)` on line 379 of node_modules/leaflet/dist/leaflet.css. Until Leaflet 1.0.1 is released, a workaround is to modify it to point to an existing file: `url(images/marker-icon.png)` before running `npm run build`. **NB!**
+
 Uses webpack to create a bundled javascript library which enables easy creation of Leaflet maps with Helsinki background tiles.
 
 Bundle includes Leaflet v1.0-rc.1, Proj4.js and Proj4Leaflet, plus the incantations needed to enable the Finnish national coordinate systems (click for details in Finnish):
