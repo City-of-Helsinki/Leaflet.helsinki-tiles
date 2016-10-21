@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hkotkanen/Leaflet.helsinki-tiles#readme",
   "dependencies": {
-    "leaflet": "git://github.com/Leaflet/Leaflet.git#v1.0.0",
+    "leaflet": "git://github.com/Leaflet/Leaflet.git#v1.0.1",
     "proj4": "^2.3.14",
     "proj4leaflet": "git://github.com/kartena/Proj4Leaflet.git#leaflet-proj-refactor"
   },

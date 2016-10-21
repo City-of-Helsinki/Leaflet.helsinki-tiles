@@ -18,7 +18,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: "style!css" },
-            { test: /\.(png|jpg)$/, loader: "file-loader?name=images/[name].[ext]" }
+            { test: /\.(png|jpg)$/, loader: "file-loader?name=../images/[name].[ext]" }
         ]
     }
 };
